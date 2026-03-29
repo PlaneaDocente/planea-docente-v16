@@ -1,12 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
+
   async headers() {
     return [
       {
@@ -40,6 +40,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
   images: {
     remotePatterns: [
       {
@@ -53,9 +54,9 @@ const nextConfig: NextConfig = {
       },
       {
         hostname: "cdn.chat2db-ai.com",
-      }
+      },
     ],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

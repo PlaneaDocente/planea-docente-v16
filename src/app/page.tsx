@@ -1,4 +1,4 @@
-
+export const dynamic = "force-dynamic";
 import MainLayout from "@/components/planea/MainLayout";
 
 export default function Home() {
